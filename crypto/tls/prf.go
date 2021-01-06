@@ -5,14 +5,14 @@
 package tls
 
 import (
-	"crypto"
 	"crypto/hmac"
 	"crypto/md5"
 	"crypto/sha1"
-	"crypto/sha256"
 	"crypto/sha512"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"hash"
 )
 

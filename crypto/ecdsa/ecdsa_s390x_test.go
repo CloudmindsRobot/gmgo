@@ -7,7 +7,7 @@
 package ecdsa
 
 import (
-	"crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"testing"
 )
 

@@ -9,13 +9,13 @@ package x509
 // implementation.
 
 import (
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/des"
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/pem"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"io"
 	"strings"
 )

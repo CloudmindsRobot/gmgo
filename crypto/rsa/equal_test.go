@@ -5,10 +5,10 @@
 package rsa_test
 
 import (
-	"crypto"
 	"crypto/rand"
-	"crypto/rsa"
-	"crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"testing"
 )
 

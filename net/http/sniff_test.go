@@ -7,10 +7,10 @@ package http_test
 import (
 	"bytes"
 	"fmt"
+	. "github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
 	"log"
-	. "net/http"
 	"reflect"
 	"strconv"
 	"strings"

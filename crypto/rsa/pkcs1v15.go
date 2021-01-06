@@ -5,13 +5,13 @@
 package rsa
 
 import (
-	"crypto"
 	"crypto/subtle"
 	"errors"
 	"io"
 	"math/big"
 
-	"crypto/internal/randutil"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/randutil"
 )
 
 // This file implements encryption and decryption using PKCS #1 v1.5 padding.

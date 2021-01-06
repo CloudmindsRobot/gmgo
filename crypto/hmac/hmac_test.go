@@ -7,9 +7,9 @@ package hmac
 import (
 	"crypto/md5"
 	"crypto/sha1"
-	"crypto/sha256"
 	"crypto/sha512"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"hash"
 	"testing"
 )

@@ -8,11 +8,12 @@ package rsa
 
 import (
 	"bytes"
-	"crypto"
 	"errors"
 	"hash"
 	"io"
 	"math/big"
+
+	"github.com/CloudmindsRobot/gmgo/crypto"
 )
 
 // Per RFC 8017, Section 9.1

@@ -6,12 +6,12 @@ package rsa
 
 import (
 	"bytes"
-	"crypto"
 	"crypto/rand"
 	"crypto/sha1"
-	"crypto/sha256"
 	"encoding/base64"
 	"encoding/hex"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io"
 	"math/big"
 	"testing"

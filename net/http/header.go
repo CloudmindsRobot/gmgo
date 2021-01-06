@@ -5,8 +5,8 @@
 package http
 
 import (
+	"github.com/CloudmindsRobot/gmgo/net/http/httptrace"
 	"io"
-	"net/http/httptrace"
 	"net/textproto"
 	"sort"
 	"strings"

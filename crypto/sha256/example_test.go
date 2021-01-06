@@ -5,8 +5,8 @@
 package sha256_test
 
 import (
-	"crypto/sha256"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io"
 	"log"
 	"os"

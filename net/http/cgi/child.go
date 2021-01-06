@@ -9,13 +9,13 @@ package cgi
 
 import (
 	"bufio"
-	"crypto/tls"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
 	"net"
-	"net/http"
 	"net/url"
 	"os"
 	"strconv"

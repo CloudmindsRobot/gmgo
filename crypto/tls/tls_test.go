@@ -7,11 +7,11 @@ package tls
 import (
 	"bytes"
 	"context"
-	"crypto"
-	"crypto/x509"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"internal/testenv"
 	"io"
 	"io/ioutil"

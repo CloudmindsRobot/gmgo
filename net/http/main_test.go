@@ -6,9 +6,9 @@ package http_test
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"os"
 	"runtime"
 	"sort"

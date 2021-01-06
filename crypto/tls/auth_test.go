@@ -5,7 +5,7 @@
 package tls
 
 import (
-	"crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto"
 	"testing"
 )
 

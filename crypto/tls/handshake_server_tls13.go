@@ -6,10 +6,10 @@ package tls
 
 import (
 	"bytes"
-	"crypto"
 	"crypto/hmac"
-	"crypto/rsa"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
 	"hash"
 	"io"
 	"sync/atomic"

@@ -10,15 +10,15 @@
 package main
 
 import (
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/elliptic"
 	"crypto/rand"
-	"crypto/rsa"
-	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/pem"
 	"flag"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"log"
 	"math/big"
 	"net"

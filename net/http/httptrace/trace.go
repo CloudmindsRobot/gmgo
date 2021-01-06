@@ -8,7 +8,7 @@ package httptrace
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"internal/nettrace"
 	"net"
 	"net/textproto"

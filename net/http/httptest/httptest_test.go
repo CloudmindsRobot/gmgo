@@ -5,10 +5,10 @@
 package httptest
 
 import (
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"net/url"
 	"reflect"
 	"strings"

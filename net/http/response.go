@@ -9,9 +9,9 @@ package http
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"io"
 	"net/textproto"
 	"net/url"

@@ -6,12 +6,12 @@ package x509_test
 
 import (
 	"crypto/dsa"
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/rsa"
-	"crypto/x509"
 	"encoding/pem"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 )
 
 func ExampleCertificate_Verify() {

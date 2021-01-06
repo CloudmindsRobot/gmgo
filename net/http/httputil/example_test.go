@@ -6,11 +6,11 @@ package httputil_test
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
+	"github.com/CloudmindsRobot/gmgo/net/http/httputil"
 	"io/ioutil"
 	"log"
-	"net/http"
-	"net/http/httptest"
-	"net/http/httputil"
 	"net/url"
 	"strings"
 )

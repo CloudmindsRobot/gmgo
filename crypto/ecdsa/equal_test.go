@@ -5,11 +5,11 @@
 package ecdsa_test
 
 import (
-	"crypto"
-	"crypto/ecdsa"
-	"crypto/elliptic"
 	"crypto/rand"
-	"crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"testing"
 )
 

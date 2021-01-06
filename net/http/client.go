@@ -11,10 +11,10 @@ package http
 
 import (
 	"context"
-	"crypto/tls"
 	"encoding/base64"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"io"
 	"io/ioutil"
 	"log"

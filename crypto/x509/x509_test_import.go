@@ -11,9 +11,9 @@ package main
 
 import (
 	"crypto/rand"
-	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/pem"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"math/big"
 	"strings"
 	"time"

@@ -7,9 +7,9 @@ package httputil
 import (
 	"bufio"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"net"
-	"net/http"
 	"net/textproto"
 	"sync"
 )

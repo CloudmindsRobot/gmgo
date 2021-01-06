@@ -5,9 +5,9 @@
 package crypto
 
 import (
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rc4"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"testing"
 )
 

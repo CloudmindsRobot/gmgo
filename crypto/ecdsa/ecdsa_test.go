@@ -7,11 +7,7 @@ package ecdsa
 import (
 	"bufio"
 	"compress/bzip2"
-	"crypto/elliptic"
 	"crypto/rand"
-	"crypto/sha1"
-	"crypto/sha256"
-	"crypto/sha512"
 	"encoding/hex"
 	"hash"
 	"io"
@@ -19,6 +15,11 @@ import (
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha512"
 )
 
 func testKeyGeneration(t *testing.T, c elliptic.Curve, tag string) {

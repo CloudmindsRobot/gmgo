@@ -7,10 +7,12 @@
 package sha256
 
 import (
-	"crypto"
 	"encoding/binary"
 	"errors"
 	"hash"
+
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 )
 
 func init() {
@@ -159,14 +161,16 @@ func (d *digest) Reset() {
 // encoding.BinaryUnmarshaler to marshal and unmarshal the internal
 // state of the hash.
 func New() hash.Hash {
-	d := new(digest)
+	//d := new(digest)
+	d := new(sm3.SM3)
 	d.Reset()
 	return d
 }
 
 // New224 returns a new hash.Hash computing the SHA224 checksum.
 func New224() hash.Hash {
-	d := new(digest)
+	//d := new(digest)
+	d := new(sm3.SM3)
 	d.is224 = true
 	d.Reset()
 	return d
@@ -251,20 +255,30 @@ func (d *digest) checkSum() [Size]byte {
 }
 
 // Sum256 returns the SHA256 checksum of the data.
-func Sum256(data []byte) [Size]byte {
-	var d digest
-	d.Reset()
-	d.Write(data)
-	return d.checkSum()
+func Sum256(data []byte) (sum256 [Size]byte) {
+	/*
+		var d digest
+		d.Reset()
+		d.Write(data)
+		return d.checkSum()
+	*/
+	sum := sm3.Sm3Sum(data)
+	copy(sum256[:], sum[:Size])
+	return
 }
 
 // Sum224 returns the SHA224 checksum of the data.
 func Sum224(data []byte) (sum224 [Size224]byte) {
-	var d digest
-	d.is224 = true
-	d.Reset()
-	d.Write(data)
-	sum := d.checkSum()
+	/*
+		var d digest
+		d.is224 = true
+		d.Reset()
+		d.Write(data)
+		sum := d.checkSum()
+		copy(sum224[:], sum[:Size224])
+		return
+	*/
+	sum := sm3.Sm3Sum(data)
 	copy(sum224[:], sum[:Size224])
 	return
 }

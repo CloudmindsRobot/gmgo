@@ -8,10 +8,10 @@ package httptest
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"strings"
 )
 

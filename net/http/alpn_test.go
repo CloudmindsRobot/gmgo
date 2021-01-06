@@ -7,13 +7,13 @@ package http_test
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
-	"crypto/x509"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
+	. "github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
 	"io"
 	"io/ioutil"
-	. "net/http"
-	"net/http/httptest"
 	"strings"
 	"testing"
 )

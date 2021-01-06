@@ -5,8 +5,8 @@
 package http_test
 
 import (
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"log"
-	"net/http"
 	"os"
 	"strings"
 )

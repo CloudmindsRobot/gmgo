@@ -6,10 +6,10 @@ package cipher_test
 
 import (
 	"bytes"
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
 	"encoding/hex"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"testing"
 )
 

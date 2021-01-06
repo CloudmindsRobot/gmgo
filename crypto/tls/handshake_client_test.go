@@ -6,13 +6,13 @@ package tls
 
 import (
 	"bytes"
-	"crypto/rsa"
-	"crypto/x509"
 	"encoding/base64"
 	"encoding/binary"
 	"encoding/pem"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io"
 	"math/big"
 	"net"

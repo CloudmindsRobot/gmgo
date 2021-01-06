@@ -6,8 +6,8 @@ package http_test
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"log"
-	"net/http"
 	"sync"
 )
 

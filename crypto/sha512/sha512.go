@@ -11,9 +11,9 @@
 package sha512
 
 import (
-	"crypto"
 	"encoding/binary"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto"
 	"hash"
 )
 

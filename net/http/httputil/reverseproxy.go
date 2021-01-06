@@ -9,10 +9,10 @@ package httputil
 import (
 	"context"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"log"
 	"net"
-	"net/http"
 	"net/textproto"
 	"net/url"
 	"strings"

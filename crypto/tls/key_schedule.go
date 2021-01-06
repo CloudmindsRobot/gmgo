@@ -5,9 +5,9 @@
 package tls
 
 import (
-	"crypto/elliptic"
 	"crypto/hmac"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"hash"
 	"io"
 	"math/big"

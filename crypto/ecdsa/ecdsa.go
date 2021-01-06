@@ -27,18 +27,20 @@ package ecdsa
 //     http://www.secg.org/sec1-v2.pdf
 
 import (
-	"crypto"
-	"crypto/aes"
-	"crypto/cipher"
-	"crypto/elliptic"
 	"crypto/internal/randutil"
-	"crypto/sha512"
 	"errors"
 	"io"
 	"math/big"
 
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/crypto/cryptobyte/asn1"
+
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
+	"github.com/CloudmindsRobot/gmgo/crypto/cipher"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm2"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha512"
 )
 
 // A invertible implements fast inverse mod Curve.Params().N
@@ -126,6 +128,18 @@ func (priv *PrivateKey) Sign(rand io.Reader, digest []byte, opts crypto.SignerOp
 	return b.Bytes()
 }
 
+func (priv *PrivateKey) ToGmPrivateKey() *sm2.PrivateKey {
+	return &sm2.PrivateKey{
+		*priv.PublicKey.ToGmPublicKey(),
+		priv.D,
+	}
+}
+func (pub *PublicKey) ToGmPublicKey() *sm2.PublicKey {
+	return &sm2.PublicKey{
+		pub.Curve, pub.X, pub.Y,
+	}
+}
+
 var one = new(big.Int).SetInt64(1)
 
 // randFieldElement returns a random element of the field underlying the given
@@ -147,16 +161,23 @@ func randFieldElement(c elliptic.Curve, rand io.Reader) (k *big.Int, err error) 
 
 // GenerateKey generates a public and private key pair.
 func GenerateKey(c elliptic.Curve, rand io.Reader) (*PrivateKey, error) {
-	k, err := randFieldElement(c, rand)
-	if err != nil {
-		return nil, err
-	}
+	/*
+		k, err := randFieldElement(c, rand)
+		if err != nil {
+			return nil, err
+		}
 
-	priv := new(PrivateKey)
-	priv.PublicKey.Curve = c
-	priv.D = k
-	priv.PublicKey.X, priv.PublicKey.Y = c.ScalarBaseMult(k.Bytes())
-	return priv, nil
+		priv := new(PrivateKey)
+		priv.PublicKey.Curve = c
+		priv.D = k
+		priv.PublicKey.X, priv.PublicKey.Y = c.ScalarBaseMult(k.Bytes())
+		return priv, nil
+	*/
+	key, err := sm2.GenerateKey()
+	return &PrivateKey{
+		PublicKey: PublicKey{c, key.X, key.Y},
+		D:         key.D,
+	}, err
 }
 
 // hashToInt converts a hash value to an integer. There is some disagreement
@@ -283,23 +304,27 @@ func signGeneric(priv *PrivateKey, csprng *cipher.StreamReader, c elliptic.Curve
 // returns the ASN.1 encoded signature. The security of the private key
 // depends on the entropy of rand.
 func SignASN1(rand io.Reader, priv *PrivateKey, hash []byte) ([]byte, error) {
-	return priv.Sign(rand, hash, nil)
+	//return priv.Sign(rand, hash, nil)
+	return sm2.Sign(priv.ToGmPrivateKey(), hash)
 }
 
 // Verify verifies the signature in r, s of hash using the public key, pub. Its
 // return value records whether the signature is valid.
 func Verify(pub *PublicKey, hash []byte, r, s *big.Int) bool {
-	// See [NSA] 3.4.2
-	c := pub.Curve
-	N := c.Params().N
+	/*
+		// See [NSA] 3.4.2
+		c := pub.Curve
+		N := c.Params().N
 
-	if r.Sign() <= 0 || s.Sign() <= 0 {
-		return false
-	}
-	if r.Cmp(N) >= 0 || s.Cmp(N) >= 0 {
-		return false
-	}
-	return verify(pub, c, hash, r, s)
+		if r.Sign() <= 0 || s.Sign() <= 0 {
+			return false
+		}
+		if r.Cmp(N) >= 0 || s.Cmp(N) >= 0 {
+			return false
+		}
+		return verify(pub, c, hash, r, s)
+	*/
+	return sm2.Verify(pub.ToGmPublicKey(), hash, r, s)
 }
 
 func verifyGeneric(pub *PublicKey, c elliptic.Curve, hash []byte, r, s *big.Int) bool {

@@ -7,10 +7,10 @@ package http_test
 import (
 	"context"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"os"
 	"os/signal"
 )

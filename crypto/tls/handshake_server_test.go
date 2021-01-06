@@ -6,12 +6,12 @@ package tls
 
 import (
 	"bytes"
-	"crypto"
-	"crypto/elliptic"
-	"crypto/x509"
 	"encoding/pem"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io"
 	"net"
 	"os"

@@ -6,14 +6,14 @@ package x509
 
 import (
 	"bytes"
-	"crypto/ecdsa"
-	"crypto/elliptic"
 	"crypto/rand"
 	"crypto/x509/pkix"
 	"encoding/asn1"
 	"encoding/hex"
 	"encoding/pem"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"io/ioutil"
 	"math/big"
 	"net"

@@ -7,9 +7,9 @@ package fcgi
 import (
 	"bytes"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"strings"
 	"testing"
 )

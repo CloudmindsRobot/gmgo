@@ -7,10 +7,10 @@ package pprof
 import (
 	"bytes"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
 	"internal/profile"
 	"io/ioutil"
-	"net/http"
-	"net/http/httptest"
 	"runtime"
 	"runtime/pprof"
 	"strings"

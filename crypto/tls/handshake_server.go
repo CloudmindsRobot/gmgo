@@ -5,14 +5,14 @@
 package tls
 
 import (
-	"crypto"
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/rsa"
 	"crypto/subtle"
-	"crypto/x509"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io"
 	"sync/atomic"
 	"time"

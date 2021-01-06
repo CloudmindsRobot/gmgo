@@ -6,9 +6,9 @@ package httptest
 
 import (
 	"bufio"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io/ioutil"
 	"net"
-	"net/http"
 	"testing"
 )
 

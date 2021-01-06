@@ -6,9 +6,9 @@ package cipher_test
 
 import (
 	"bytes"
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/des"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"testing"
 )
 

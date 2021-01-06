@@ -7,13 +7,13 @@
 package httptest
 
 import (
-	"crypto/tls"
-	"crypto/x509"
 	"flag"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"log"
 	"net"
-	"net/http"
 	"net/http/internal"
 	"os"
 	"strings"

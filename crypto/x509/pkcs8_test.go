@@ -6,11 +6,11 @@ package x509
 
 import (
 	"bytes"
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/elliptic"
-	"crypto/rsa"
 	"encoding/hex"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
 	"reflect"
 	"strings"
 	"testing"

@@ -8,8 +8,8 @@ package http
 
 import (
 	"bytes"
-	"crypto/tls"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"io"
 	"io/ioutil"
 	"net"

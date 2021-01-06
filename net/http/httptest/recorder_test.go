@@ -6,9 +6,9 @@ package httptest
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"testing"
 )
 

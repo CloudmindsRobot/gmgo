@@ -11,9 +11,9 @@ package rand
 
 import (
 	"bufio"
-	"crypto/aes"
 	"crypto/cipher"
 	"encoding/binary"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"io"
 	"os"
 	"runtime"

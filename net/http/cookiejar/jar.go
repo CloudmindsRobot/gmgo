@@ -8,8 +8,8 @@ package cookiejar
 import (
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"net"
-	"net/http"
 	"net/url"
 	"sort"
 	"strings"

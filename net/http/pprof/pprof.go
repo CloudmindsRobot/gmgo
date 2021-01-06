@@ -10,10 +10,10 @@
 // The handled paths all begin with /debug/pprof/.
 //
 // To use pprof, link this package into your program:
-//	import _ "net/http/pprof"
+//	import _ "github.com/CloudmindsRobot/gmgo/net/http/pprof"
 //
 // If your application is not already running an http server, you
-// need to start one. Add "net/http" and "log" to your imports and
+// need to start one. Add "github.com/CloudmindsRobot/gmgo/net/http" and "log" to your imports and
 // the following code to your main function:
 //
 // 	go func() {
@@ -61,11 +61,11 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"html/template"
 	"internal/profile"
 	"io"
 	"log"
-	"net/http"
 	"os"
 	"runtime"
 	"runtime/pprof"

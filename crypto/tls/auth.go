@@ -6,13 +6,13 @@ package tls
 
 import (
 	"bytes"
-	"crypto"
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/elliptic"
-	"crypto/rsa"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
 	"hash"
 	"io"
 )

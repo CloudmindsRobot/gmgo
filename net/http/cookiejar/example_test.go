@@ -6,10 +6,10 @@ package cookiejar_test
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
 	"log"
-	"net/http"
 	"net/http/cookiejar"
-	"net/http/httptest"
 	"net/url"
 )
 

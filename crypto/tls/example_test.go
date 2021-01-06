@@ -5,11 +5,11 @@
 package tls_test
 
 import (
-	"crypto/tls"
-	"crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
 	"log"
-	"net/http"
-	"net/http/httptest"
 	"os"
 	"time"
 )

@@ -7,8 +7,8 @@ package httptest
 import (
 	"bytes"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io/ioutil"
-	"net/http"
 	"net/textproto"
 	"strconv"
 	"strings"

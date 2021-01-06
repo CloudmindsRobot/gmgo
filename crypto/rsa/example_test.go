@@ -5,13 +5,13 @@
 package rsa
 
 import (
-	"crypto"
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io"
 	"os"
 )

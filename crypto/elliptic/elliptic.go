@@ -394,7 +394,8 @@ var p521 *CurveParams
 
 func initAll() {
 	initP224()
-	initP256()
+	//initP256()
+	initP256Sm2()
 	initP384()
 	initP521()
 }
@@ -431,7 +432,8 @@ func initP521() {
 // The cryptographic operations are implemented using constant-time algorithms.
 func P256() Curve {
 	initonce.Do(initAll)
-	return p256
+	//return p256
+	return sm2P256
 }
 
 // P384 returns a Curve which implements NIST P-384 (FIPS 186-3, section D.2.4),

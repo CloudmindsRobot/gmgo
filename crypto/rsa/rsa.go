@@ -23,7 +23,6 @@
 package rsa
 
 import (
-	"crypto"
 	"crypto/rand"
 	"crypto/subtle"
 	"errors"
@@ -32,7 +31,8 @@ import (
 	"math"
 	"math/big"
 
-	"crypto/internal/randutil"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/randutil"
 )
 
 var bigZero = big.NewInt(0)

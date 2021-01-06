@@ -5,16 +5,16 @@
 package tls
 
 import (
-	"crypto"
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/des"
 	"crypto/hmac"
 	"crypto/rc4"
 	"crypto/sha1"
-	"crypto/sha256"
-	"crypto/x509"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"hash"
 
 	"golang.org/x/crypto/chacha20poly1305"

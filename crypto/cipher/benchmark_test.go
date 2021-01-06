@@ -5,8 +5,8 @@
 package cipher_test
 
 import (
-	"crypto/aes"
 	"crypto/cipher"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
 	"testing"
 )
 

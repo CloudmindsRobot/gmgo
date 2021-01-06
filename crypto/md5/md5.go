@@ -11,9 +11,9 @@
 package md5
 
 import (
-	"crypto"
 	"encoding/binary"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto"
 	"hash"
 )
 

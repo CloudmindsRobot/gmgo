@@ -6,9 +6,9 @@ package httptrace_test
 
 import (
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httptrace"
 	"log"
-	"net/http"
-	"net/http/httptrace"
 )
 
 func Example() {

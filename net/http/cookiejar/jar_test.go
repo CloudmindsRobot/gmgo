@@ -6,7 +6,7 @@ package cookiejar
 
 import (
 	"fmt"
-	"net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"net/url"
 	"sort"
 	"strings"

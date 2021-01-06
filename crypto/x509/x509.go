@@ -7,21 +7,21 @@ package x509
 
 import (
 	"bytes"
-	"crypto"
 	"crypto/dsa"
-	"crypto/ecdsa"
 	"crypto/ed25519"
-	"crypto/elliptic"
-	"crypto/rsa"
 	"crypto/sha1"
 	_ "crypto/sha1"
-	_ "crypto/sha256"
 	_ "crypto/sha512"
 	"crypto/x509/pkix"
 	"encoding/asn1"
 	"encoding/pem"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/ecdsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	_ "github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io"
 	"math/big"
 	"net"
@@ -232,7 +232,8 @@ const (
 var publicKeyAlgoName = [...]string{
 	RSA:     "RSA",
 	DSA:     "DSA",
-	ECDSA:   "ECDSA",
+        //ECDSA:   "ECDSA",
+	ECDSA:   "SM2",
 	Ed25519: "Ed25519",
 }
 
@@ -309,7 +310,8 @@ var (
 	oidSignatureDSAWithSHA1     = asn1.ObjectIdentifier{1, 2, 840, 10040, 4, 3}
 	oidSignatureDSAWithSHA256   = asn1.ObjectIdentifier{2, 16, 840, 1, 101, 3, 4, 3, 2}
 	oidSignatureECDSAWithSHA1   = asn1.ObjectIdentifier{1, 2, 840, 10045, 4, 1}
-	oidSignatureECDSAWithSHA256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 4, 3, 2}
+	//oidSignatureECDSAWithSHA256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 4, 3, 2}
+	oidSignatureECDSAWithSHA256 = asn1.ObjectIdentifier{1, 2, 156, 10197, 1, 501} //oidSignatureSM2WithSM3
 	oidSignatureECDSAWithSHA384 = asn1.ObjectIdentifier{1, 2, 840, 10045, 4, 3, 3}
 	oidSignatureECDSAWithSHA512 = asn1.ObjectIdentifier{1, 2, 840, 10045, 4, 3, 4}
 	oidSignatureEd25519         = asn1.ObjectIdentifier{1, 3, 101, 112}
@@ -346,7 +348,8 @@ var signatureAlgorithmDetails = []struct {
 	{DSAWithSHA1, "DSA-SHA1", oidSignatureDSAWithSHA1, DSA, crypto.SHA1},
 	{DSAWithSHA256, "DSA-SHA256", oidSignatureDSAWithSHA256, DSA, crypto.SHA256},
 	{ECDSAWithSHA1, "ECDSA-SHA1", oidSignatureECDSAWithSHA1, ECDSA, crypto.SHA1},
-	{ECDSAWithSHA256, "ECDSA-SHA256", oidSignatureECDSAWithSHA256, ECDSA, crypto.SHA256},
+	//{ECDSAWithSHA256, "ECDSA-SHA256", oidSignatureECDSAWithSHA256, ECDSA, crypto.SHA256},
+        {ECDSAWithSHA256, "SM2-SM3", oidSignatureECDSAWithSHA256, ECDSA, crypto.SHA256},
 	{ECDSAWithSHA384, "ECDSA-SHA384", oidSignatureECDSAWithSHA384, ECDSA, crypto.SHA384},
 	{ECDSAWithSHA512, "ECDSA-SHA512", oidSignatureECDSAWithSHA512, ECDSA, crypto.SHA512},
 	{PureEd25519, "Ed25519", oidSignatureEd25519, Ed25519, crypto.Hash(0) /* no pre-hashing */},
@@ -518,7 +521,8 @@ func getPublicKeyAlgorithmFromOID(oid asn1.ObjectIdentifier) PublicKeyAlgorithm 
 // NB: secp256r1 is equivalent to prime256v1
 var (
 	oidNamedCurveP224 = asn1.ObjectIdentifier{1, 3, 132, 0, 33}
-	oidNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
+	//oidNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
+	oidNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 156, 10197, 1, 301} //oidNamedCurveP256SM2
 	oidNamedCurveP384 = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
 	oidNamedCurveP521 = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
 )
