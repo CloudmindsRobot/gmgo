@@ -6,8 +6,8 @@ package des
 
 import (
 	"crypto/cipher"
-	"crypto/internal/subtle"
 	"encoding/binary"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 	"strconv"
 )
 

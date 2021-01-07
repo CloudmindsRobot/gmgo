@@ -12,7 +12,7 @@ import (
 	"io"
 	"math/big"
 
-	"crypto/internal/randutil"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/randutil"
 )
 
 // Parameters represents the domain parameters for a key. These parameters can

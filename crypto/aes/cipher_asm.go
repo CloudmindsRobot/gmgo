@@ -8,8 +8,8 @@ package aes
 
 import (
 	"crypto/cipher"
-	"crypto/internal/subtle"
-	"internal/cpu"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
+	"github.com/CloudmindsRobot/gmgo/internal/cpu"
 )
 
 // defined in asm_*.s

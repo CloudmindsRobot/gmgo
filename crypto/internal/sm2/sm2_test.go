@@ -18,7 +18,7 @@ package sm2
 import (
 	"crypto/rand"
 	"fmt"
-	"github.com/studyzy/crypto/internal/sm3"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 	"io/ioutil"
 	"os"
 	"testing"

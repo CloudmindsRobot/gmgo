@@ -6,12 +6,13 @@ package aes
 
 import (
 	"crypto/cipher"
-	"crypto/internal/subtle"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 	"strconv"
 )
 
 // The AES block size in bytes.
-const BlockSize = 16
+//const BlockSize = 16
+const BlockSize = SM4BlockSize
 
 // A cipher is an instance of AES encryption using a particular key.
 type aesCipher struct {
@@ -30,14 +31,17 @@ func (k KeySizeError) Error() string {
 // either 16, 24, or 32 bytes to select
 // AES-128, AES-192, or AES-256.
 func NewCipher(key []byte) (cipher.Block, error) {
-	k := len(key)
-	switch k {
-	default:
-		return nil, KeySizeError(k)
-	case 16, 24, 32:
-		break
-	}
-	return newCipher(key)
+	/*
+		k := len(key)
+		switch k {
+		default:
+			return nil, KeySizeError(k)
+		case 16, 24, 32:
+			break
+		}
+		return newCipher(key)
+	*/
+	return SM4NewCipher(key)
 }
 
 // newCipherGeneric creates and returns a new cipher.Block

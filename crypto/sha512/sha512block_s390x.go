@@ -4,6 +4,6 @@
 
 package sha512
 
-import "internal/cpu"
+import "github.com/CloudmindsRobot/gmgo/internal/cpu"
 
 var useAsm = cpu.S390X.HasSHA512

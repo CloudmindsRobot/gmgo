@@ -6,7 +6,7 @@ package aes
 
 import (
 	"crypto/cipher"
-	"crypto/internal/subtle"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 )
 
 // defined in asm_ppc64le.s

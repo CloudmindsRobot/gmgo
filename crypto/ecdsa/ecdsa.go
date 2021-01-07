@@ -27,7 +27,7 @@ package ecdsa
 //     http://www.secg.org/sec1-v2.pdf
 
 import (
-	"crypto/internal/randutil"
+	"crypto/cipher"
 	"errors"
 	"io"
 	"math/big"
@@ -36,11 +36,8 @@ import (
 	"golang.org/x/crypto/cryptobyte/asn1"
 
 	"github.com/CloudmindsRobot/gmgo/crypto"
-	"github.com/CloudmindsRobot/gmgo/crypto/aes"
-	"github.com/CloudmindsRobot/gmgo/crypto/cipher"
 	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm2"
-	"github.com/CloudmindsRobot/gmgo/crypto/sha512"
 )
 
 // A invertible implements fast inverse mod Curve.Params().N
@@ -219,43 +216,46 @@ var errZeroParam = errors.New("zero parameter")
 // returns the signature as a pair of integers. The security of the private key
 // depends on the entropy of rand.
 func Sign(rand io.Reader, priv *PrivateKey, hash []byte) (r, s *big.Int, err error) {
-	randutil.MaybeReadByte(rand)
+	/*
+		randutil.MaybeReadByte(rand)
 
-	// Get min(log2(q) / 2, 256) bits of entropy from rand.
-	entropylen := (priv.Curve.Params().BitSize + 7) / 16
-	if entropylen > 32 {
-		entropylen = 32
-	}
-	entropy := make([]byte, entropylen)
-	_, err = io.ReadFull(rand, entropy)
-	if err != nil {
-		return
-	}
+		// Get min(log2(q) / 2, 256) bits of entropy from rand.
+		entropylen := (priv.Curve.Params().BitSize + 7) / 16
+		if entropylen > 32 {
+			entropylen = 32
+		}
+		entropy := make([]byte, entropylen)
+		_, err = io.ReadFull(rand, entropy)
+		if err != nil {
+			return
+		}
 
-	// Initialize an SHA-512 hash context; digest ...
-	md := sha512.New()
-	md.Write(priv.D.Bytes()) // the private key,
-	md.Write(entropy)        // the entropy,
-	md.Write(hash)           // and the input hash;
-	key := md.Sum(nil)[:32]  // and compute ChopMD-256(SHA-512),
-	// which is an indifferentiable MAC.
+		// Initialize an SHA-512 hash context; digest ...
+		md := sha512.New()
+		md.Write(priv.D.Bytes()) // the private key,
+		md.Write(entropy)        // the entropy,
+		md.Write(hash)           // and the input hash;
+		key := md.Sum(nil)[:32]  // and compute ChopMD-256(SHA-512),
+		// which is an indifferentiable MAC.
 
-	// Create an AES-CTR instance to use as a CSPRNG.
-	block, err := aes.NewCipher(key)
-	if err != nil {
-		return nil, nil, err
-	}
+		// Create an AES-CTR instance to use as a CSPRNG.
+		block, err := aes.NewCipher(key)
+		if err != nil {
+			return nil, nil, err
+		}
 
-	// Create a CSPRNG that xors a stream of zeros with
-	// the output of the AES-CTR instance.
-	csprng := cipher.StreamReader{
-		R: zeroReader,
-		S: cipher.NewCTR(block, []byte(aesIV)),
-	}
+		// Create a CSPRNG that xors a stream of zeros with
+		// the output of the AES-CTR instance.
+		csprng := cipher.StreamReader{
+			R: zeroReader,
+			S: cipher.NewCTR(block, []byte(aesIV)),
+		}
 
-	// See [NSA] 3.4.1
-	c := priv.PublicKey.Curve
-	return sign(priv, &csprng, c, hash)
+		// See [NSA] 3.4.1
+		c := priv.PublicKey.Curve
+		return sign(priv, &csprng, c, hash)
+	*/
+	return sm2.Sign(priv.ToGmPrivateKey(), hash)
 }
 
 func signGeneric(priv *PrivateKey, csprng *cipher.StreamReader, c elliptic.Curve, hash []byte) (r, s *big.Int, err error) {
@@ -304,8 +304,7 @@ func signGeneric(priv *PrivateKey, csprng *cipher.StreamReader, c elliptic.Curve
 // returns the ASN.1 encoded signature. The security of the private key
 // depends on the entropy of rand.
 func SignASN1(rand io.Reader, priv *PrivateKey, hash []byte) ([]byte, error) {
-	//return priv.Sign(rand, hash, nil)
-	return sm2.Sign(priv.ToGmPrivateKey(), hash)
+	return priv.Sign(rand, hash, nil)
 }
 
 // Verify verifies the signature in r, s of hash using the public key, pub. Its

@@ -7,7 +7,7 @@ package ecdsa
 import (
 	"crypto/cipher"
 	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
-	"internal/cpu"
+	"github.com/CloudmindsRobot/gmgo/internal/cpu"
 	"math/big"
 )
 

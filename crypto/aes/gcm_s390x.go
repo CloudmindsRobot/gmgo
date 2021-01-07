@@ -6,11 +6,11 @@ package aes
 
 import (
 	"crypto/cipher"
-	subtleoverlap "crypto/internal/subtle"
 	"crypto/subtle"
 	"encoding/binary"
 	"errors"
-	"internal/cpu"
+	subtleoverlap "github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
+	"github.com/CloudmindsRobot/gmgo/internal/cpu"
 )
 
 // This file contains two implementations of AES-GCM. The first implementation

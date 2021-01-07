@@ -176,7 +176,7 @@ func (sm3 *SM3) update2(msg []byte, nblocks int) [8]uint32 {
 	}
 	var digest [8]uint32
 	digest[0], digest[1], digest[2], digest[3], digest[4], digest[5], digest[6], digest[7] = a, b, c, d, e, f, g, h
-	return digest
+   return digest
 }
 func New() hash.Hash {
 	var sm3 SM3

@@ -17,7 +17,7 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
-	"internal/cpu"
+	"github.com/CloudmindsRobot/gmgo/internal/cpu"
 	"io"
 	"net"
 	"strings"

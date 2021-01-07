@@ -171,7 +171,7 @@ func New() hash.Hash {
 func New224() hash.Hash {
 	//d := new(digest)
 	d := new(sm3.SM3)
-	d.is224 = true
+	//d.is224 = true
 	d.Reset()
 	return d
 }

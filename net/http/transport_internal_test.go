@@ -10,10 +10,10 @@ import (
 	"bytes"
 	"errors"
 	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/net/http/internal"
 	"io"
 	"io/ioutil"
 	"net"
-	"net/http/internal"
 	"strings"
 	"testing"
 )

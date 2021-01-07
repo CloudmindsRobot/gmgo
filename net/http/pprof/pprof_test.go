@@ -7,9 +7,9 @@ package pprof
 import (
 	"bytes"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/internal/profile"
 	"github.com/CloudmindsRobot/gmgo/net/http"
 	"github.com/CloudmindsRobot/gmgo/net/http/httptest"
-	"internal/profile"
 	"io/ioutil"
 	"runtime"
 	"runtime/pprof"

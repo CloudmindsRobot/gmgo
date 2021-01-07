@@ -10,7 +10,7 @@
 package rc4
 
 import (
-	"crypto/internal/subtle"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 	"strconv"
 )
 

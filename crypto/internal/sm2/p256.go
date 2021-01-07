@@ -16,7 +16,7 @@ limitations under the License.
 package sm2
 
 import (
-	"github.com/studyzy/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"math/big"
 	"sync"
 )

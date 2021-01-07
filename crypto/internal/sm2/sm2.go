@@ -26,12 +26,12 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/studyzy/crypto"
-	"github.com/studyzy/crypto/elliptic"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/elliptic"
 	"io"
 	"math/big"
 
-	"github.com/studyzy/crypto/internal/sm3"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 )
 
 var (

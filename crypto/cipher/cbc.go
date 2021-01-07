@@ -11,7 +11,7 @@
 
 package cipher
 
-import "crypto/internal/subtle"
+import "github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 
 type cbc struct {
 	b         Block

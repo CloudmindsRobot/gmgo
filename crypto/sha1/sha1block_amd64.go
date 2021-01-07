@@ -4,7 +4,7 @@
 
 package sha1
 
-import "internal/cpu"
+import "github.com/CloudmindsRobot/gmgo/internal/cpu"
 
 //go:noescape
 func blockAVX2(dig *digest, p []byte)

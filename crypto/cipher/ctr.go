@@ -12,7 +12,7 @@
 
 package cipher
 
-import "crypto/internal/subtle"
+import "github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
 
 type ctr struct {
 	b       Block
