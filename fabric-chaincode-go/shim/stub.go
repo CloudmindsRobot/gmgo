@@ -4,10 +4,10 @@
 package shim
 
 import (
-	"crypto/sha256"
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"os"
 	"unicode/utf8"
 

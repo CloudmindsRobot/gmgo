@@ -4,8 +4,8 @@
 package shim
 
 import (
-	"crypto/sha256"
 	"encoding/binary"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"os"
 	"testing"
 

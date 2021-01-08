@@ -4,8 +4,8 @@
 package internal
 
 import (
-	"crypto/tls"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"net"
 	"time"
 

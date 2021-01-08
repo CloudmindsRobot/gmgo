@@ -4,11 +4,11 @@
 package internal
 
 import (
-	"crypto/tls"
-	"crypto/x509"
 	"encoding/base64"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io/ioutil"
 	"os"
 	"strconv"

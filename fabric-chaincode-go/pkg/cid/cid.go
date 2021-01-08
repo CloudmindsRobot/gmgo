@@ -4,13 +4,13 @@
 package cid
 
 import (
-	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/asn1"
 	"encoding/base64"
 	"encoding/hex"
 	"encoding/pem"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-chaincode-go/pkg/attrmgr"

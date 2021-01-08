@@ -5,7 +5,7 @@ package internal
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"time"
 
 	peerpb "github.com/hyperledger/fabric-protos-go/peer"

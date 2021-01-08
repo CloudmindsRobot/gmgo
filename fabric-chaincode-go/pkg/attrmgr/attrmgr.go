@@ -6,12 +6,12 @@
 package attrmgr
 
 import (
-	"crypto/x509"
 	"crypto/x509/pkix"
 	"encoding/asn1"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/msp"

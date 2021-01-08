@@ -4,8 +4,8 @@
 package attrmgr_test
 
 import (
-	"crypto/x509"
 	"encoding/base64"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"testing"
 
 	"github.com/hyperledger/fabric-chaincode-go/pkg/attrmgr"
