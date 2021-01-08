@@ -30,8 +30,8 @@ package main
 import (
 	"flag"
 	"fmt"
+	_ "github.com/CloudmindsRobot/gmgo/net/http/pprof"
 	"net"
-	_ "net/http/pprof"
 	"os"
 	"os/signal"
 	"runtime"

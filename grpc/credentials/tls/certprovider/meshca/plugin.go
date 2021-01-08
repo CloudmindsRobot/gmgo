@@ -24,13 +24,13 @@ package meshca
 
 import (
 	"context"
-	"crypto"
 	"crypto/rand"
-	"crypto/rsa"
-	"crypto/tls"
-	"crypto/x509"
 	"encoding/pem"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/rsa"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"time"
 
 	durationpb "github.com/golang/protobuf/ptypes/duration"

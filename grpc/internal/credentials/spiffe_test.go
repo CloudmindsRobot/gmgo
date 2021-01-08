@@ -19,9 +19,9 @@
 package credentials
 
 import (
-	"crypto/tls"
-	"crypto/x509"
 	"encoding/pem"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io/ioutil"
 	"net/url"
 	"testing"

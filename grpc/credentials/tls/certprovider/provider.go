@@ -26,9 +26,9 @@ package certprovider
 
 import (
 	"context"
-	"crypto/tls"
-	"crypto/x509"
 	"errors"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 
 	"google.golang.org/grpc/internal"
 )

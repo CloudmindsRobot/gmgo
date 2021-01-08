@@ -18,7 +18,7 @@
 
 package credentials
 
-import "crypto/tls"
+import "github.com/CloudmindsRobot/gmgo/crypto/tls"
 
 const alpnProtoStrH2 = "h2"
 

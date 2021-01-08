@@ -24,8 +24,8 @@
 package credentials
 
 import (
-	"crypto/tls"
-	"crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"net/url"
 
 	"google.golang.org/grpc/grpclog"

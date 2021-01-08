@@ -25,8 +25,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"io/ioutil"
-	"net/http"
 	"strings"
 	"testing"
 

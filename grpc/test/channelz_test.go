@@ -20,8 +20,8 @@ package test
 
 import (
 	"context"
-	"crypto/tls"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"net"
 	"reflect"
 	"strings"

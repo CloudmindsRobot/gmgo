@@ -20,12 +20,12 @@ package conn
 
 import (
 	"bytes"
-	"crypto/aes"
 	"crypto/cipher"
 	"crypto/hmac"
-	"crypto/sha256"
 	"encoding/binary"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/aes"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"strconv"
 )
 

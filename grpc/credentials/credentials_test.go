@@ -20,7 +20,7 @@ package credentials
 
 import (
 	"context"
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"net"
 	"strings"
 	"testing"

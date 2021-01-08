@@ -23,10 +23,10 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http/httputil"
 	"io"
 	"net"
-	"net/http"
-	"net/http/httputil"
 	"net/url"
 )
 

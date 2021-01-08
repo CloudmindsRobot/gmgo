@@ -19,7 +19,7 @@ package testutils
 
 import (
 	"context"
-	"net/http"
+	"github.com/CloudmindsRobot/gmgo/net/http"
 	"time"
 )
 

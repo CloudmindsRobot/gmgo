@@ -21,7 +21,7 @@
 package credentials
 
 import (
-	"crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"net/url"
 )
 

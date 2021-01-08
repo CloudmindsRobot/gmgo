@@ -21,9 +21,9 @@
 package meshca
 
 import (
-	"crypto/x509"
 	"encoding/json"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"sync"
 
 	"google.golang.org/grpc"

@@ -20,9 +20,9 @@ package credentials
 
 import (
 	"context"
-	"crypto/tls"
-	"crypto/x509"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/tls"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io/ioutil"
 	"net"
 	"net/url"

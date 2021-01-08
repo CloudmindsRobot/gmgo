@@ -19,10 +19,10 @@
 package stats
 
 import (
-	"crypto/sha256"
 	"encoding/csv"
 	"encoding/hex"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io/ioutil"
 	"math"
 	"math/rand"

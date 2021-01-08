@@ -20,7 +20,7 @@ package pemfile
 
 import (
 	"context"
-	"crypto/x509"
+	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"io/ioutil"
 	"math/big"
 	"os"
