@@ -4,7 +4,7 @@ package mock
 import (
 	"sync"
 
-	"github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/shim"
+	"github.com/hyperledger/fabric-chaincode-go/shim"
 	"github.com/hyperledger/fabric-protos-go/peer"
 )
 

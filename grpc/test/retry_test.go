@@ -28,13 +28,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/envconfig"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
 	"github.com/golang/protobuf/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/internal/envconfig"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/status"
+	testpb "google.golang.org/grpc/test/grpc_testing"
 )
 
 func enableRetry() func() {

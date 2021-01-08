@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeserver"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	"github.com/golang/protobuf/proto"
 	anypb "github.com/golang/protobuf/ptypes/any"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/internal/testutils"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"google.golang.org/grpc/xds/internal/version"
 )
 
 const (

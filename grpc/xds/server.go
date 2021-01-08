@@ -25,12 +25,12 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	internalgrpclog "github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcsync"
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/grpclog"
+	internalgrpclog "google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc/internal/grpcsync"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/client/bootstrap"
 )
 
 const (

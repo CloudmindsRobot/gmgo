@@ -21,7 +21,7 @@ package grpclog
 import (
 	"fmt"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	"google.golang.org/grpc/internal/grpclog"
 )
 
 // componentData records the settings for a component.

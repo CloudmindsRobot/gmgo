@@ -21,7 +21,7 @@
 package networktype
 
 import (
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"google.golang.org/grpc/resolver"
 )
 
 // keyType is the key to use for storing State in Attributes.

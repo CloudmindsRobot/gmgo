@@ -29,16 +29,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/backoff"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	internalbackoff "github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/transport"
-	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver/manual"
-	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
 	"golang.org/x/net/http2"
+	"google.golang.org/grpc/backoff"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/credentials"
+	internalbackoff "google.golang.org/grpc/internal/backoff"
+	"google.golang.org/grpc/internal/transport"
+	"google.golang.org/grpc/keepalive"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/resolver/manual"
+	"google.golang.org/grpc/testdata"
 )
 
 func (s) TestDialWithTimeout(t *testing.T) {

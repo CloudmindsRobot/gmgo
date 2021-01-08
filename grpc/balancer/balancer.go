@@ -27,12 +27,12 @@ import (
 	"net"
 	"strings"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/internal"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/serviceconfig"
 )
 
 var (

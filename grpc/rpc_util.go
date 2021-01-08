@@ -31,15 +31,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/encoding"
-	"github.com/CloudmindsRobot/gmgo/grpc/encoding/proto"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/transport"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/peer"
-	"github.com/CloudmindsRobot/gmgo/grpc/stats"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/encoding"
+	"google.golang.org/grpc/encoding/proto"
+	"google.golang.org/grpc/internal/transport"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/peer"
+	"google.golang.org/grpc/stats"
+	"google.golang.org/grpc/status"
 )
 
 // Compressor defines the interface gRPC uses to compress a message.

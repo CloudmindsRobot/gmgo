@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
+	"google.golang.org/grpc/metadata"
 )
 
 type headerMatcherInterface interface {

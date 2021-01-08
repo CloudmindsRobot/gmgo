@@ -21,9 +21,9 @@ package grpclb
 import (
 	"encoding/json"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/balancer/roundrobin"
+	"google.golang.org/grpc/serviceconfig"
 )
 
 const (

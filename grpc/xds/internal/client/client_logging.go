@@ -21,8 +21,8 @@ package client
 import (
 	"fmt"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	internalgrpclog "github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	"google.golang.org/grpc/grpclog"
+	internalgrpclog "google.golang.org/grpc/internal/grpclog"
 )
 
 const prefix = "[xds-client %p] "

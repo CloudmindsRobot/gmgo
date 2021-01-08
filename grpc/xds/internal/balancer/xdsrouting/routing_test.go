@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/hierarchy"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/balancergroup"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/roundrobin"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/internal/hierarchy"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
+	"google.golang.org/grpc/xds/internal/testutils"
 )
 
 type s struct {

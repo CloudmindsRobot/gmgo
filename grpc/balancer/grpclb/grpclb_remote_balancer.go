@@ -26,18 +26,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	lbpb "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb/grpc_lb_v1"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/channelz"
-	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
 	"github.com/golang/protobuf/proto"
 	timestamppb "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/balancer"
+	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/internal/backoff"
+	"google.golang.org/grpc/internal/channelz"
+	"google.golang.org/grpc/keepalive"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/resolver"
 )
 
 // processServerList updates balancer's internal state, create/remove SubConns

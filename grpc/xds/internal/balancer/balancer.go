@@ -20,8 +20,8 @@
 package balancer
 
 import (
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/xdsrouting"     // Register the xds_routing balancer
+	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer"    // Register the CDS balancer
+	_ "google.golang.org/grpc/xds/internal/balancer/edsbalancer"    // Register the EDS balancer
+	_ "google.golang.org/grpc/xds/internal/balancer/weightedtarget" // Register the weighted_target balancer
+	_ "google.golang.org/grpc/xds/internal/balancer/xdsrouting"     // Register the xds_routing balancer
 )

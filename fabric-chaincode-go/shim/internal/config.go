@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	"google.golang.org/grpc/keepalive"
 )
 
 // Config contains chaincode's configuration

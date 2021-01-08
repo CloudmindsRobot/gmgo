@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/internal/backoff"
 )
 
 var logger = grpclog.Component("rls")

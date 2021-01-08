@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/serviceconfig"
 )
 
 // EDSConfig represents the loadBalancingConfig section of the service config

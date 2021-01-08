@@ -1,4 +1,7 @@
-module github.com/CloudmindsRobot/gmgo/grpc
+module google.golang.org/grpc
+
+//github.com/CloudmindsRobot/gmgo/grpc
+//google.golang.org/grpc
 
 //go 1.11
 go 1.15

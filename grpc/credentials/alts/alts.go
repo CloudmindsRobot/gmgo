@@ -31,12 +31,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	core "github.com/CloudmindsRobot/gmgo/grpc/credentials/alts/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/alts/internal/handshaker"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/alts/internal/handshaker/service"
-	altspb "github.com/CloudmindsRobot/gmgo/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"google.golang.org/grpc/credentials"
+	core "google.golang.org/grpc/credentials/alts/internal"
+	"google.golang.org/grpc/credentials/alts/internal/handshaker"
+	"google.golang.org/grpc/credentials/alts/internal/handshaker/service"
+	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
+	"google.golang.org/grpc/grpclog"
 )
 
 const (

@@ -23,8 +23,8 @@
 package hierarchy
 
 import (
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/resolver"
 )
 
 type pathKeyType string

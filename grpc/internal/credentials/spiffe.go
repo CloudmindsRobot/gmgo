@@ -28,7 +28,7 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"net/url"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"google.golang.org/grpc/grpclog"
 )
 
 var logger = grpclog.Component("credentials")

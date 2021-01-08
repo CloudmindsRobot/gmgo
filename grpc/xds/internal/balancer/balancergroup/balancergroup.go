@@ -23,14 +23,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
+	"google.golang.org/grpc/xds/internal/client/load"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/cache"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/internal/cache"
+	"google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc/resolver"
 )
 
 // subBalancerWrapper is used to keep the configurations that will be used to start

@@ -23,7 +23,7 @@ import (
 	"context"
 	"net"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"google.golang.org/grpc/credentials"
 )
 
 const (

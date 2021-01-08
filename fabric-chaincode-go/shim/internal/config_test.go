@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/shim/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	. "github.com/hyperledger/fabric-chaincode-go/shim/internal"
 	peerpb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/keepalive"
 )
 
 // TLS <key, cert, cacert> tuples for client and server were created

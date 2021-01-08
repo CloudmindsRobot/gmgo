@@ -24,17 +24,17 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	_ "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/alts"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/google"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/oauth"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/interop"
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/interop/grpc_testing"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
+	"google.golang.org/grpc"
+	_ "google.golang.org/grpc/balancer/grpclb"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/credentials/alts"
+	"google.golang.org/grpc/credentials/google"
+	"google.golang.org/grpc/credentials/oauth"
+	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/interop"
+	testpb "google.golang.org/grpc/interop/grpc_testing"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/testdata"
 )
 
 const (

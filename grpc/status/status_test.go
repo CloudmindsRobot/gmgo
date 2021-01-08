@@ -24,9 +24,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/status"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	apb "github.com/golang/protobuf/ptypes/any"
@@ -35,6 +32,9 @@ import (
 	cpb "google.golang.org/genproto/googleapis/rpc/code"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/internal/status"
 )
 
 type s struct {

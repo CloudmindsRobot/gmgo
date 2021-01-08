@@ -24,7 +24,7 @@ import (
 	"context"
 	"net"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"google.golang.org/grpc/credentials"
 )
 
 // Peer contains the information of the peer for an RPC, such as the address

@@ -34,17 +34,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/leakcheck"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/internal/leakcheck"
+	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/status"
 )
 
 type s struct {

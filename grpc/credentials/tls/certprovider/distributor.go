@@ -22,7 +22,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcsync"
+	"google.golang.org/grpc/internal/grpcsync"
 )
 
 // Distributor makes it easy for provider implementations to furnish new key

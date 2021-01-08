@@ -30,7 +30,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"google.golang.org/grpc/grpclog"
 )
 
 // TLogger serves as the grpclog logger and is the interface through which

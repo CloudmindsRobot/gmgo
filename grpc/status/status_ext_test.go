@@ -22,11 +22,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
-	"github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
 	"github.com/golang/protobuf/proto"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/test/grpc_testing"
 )
 
 type s struct {

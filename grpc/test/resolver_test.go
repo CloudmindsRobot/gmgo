@@ -23,15 +23,15 @@ import (
 	"testing"
 	"time"
 
-	iresolver "github.com/CloudmindsRobot/gmgo/grpc/internal/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver/manual"
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	iresolver "google.golang.org/grpc/internal/resolver"
+	"google.golang.org/grpc/internal/serviceconfig"
+	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/resolver/manual"
+	testpb "google.golang.org/grpc/test/grpc_testing"
 )
 
 type funcConfigSelector struct {

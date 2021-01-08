@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
+	"google.golang.org/grpc/connectivity"
 )
 
 const defaultTestTimeout = 10 * time.Second

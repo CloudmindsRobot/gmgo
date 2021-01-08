@@ -24,13 +24,13 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc/serviceconfig"
+	"google.golang.org/grpc/xds/internal"
+	xdsinternal "google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc/xds/internal/client/load"
 )
 
 func init() {

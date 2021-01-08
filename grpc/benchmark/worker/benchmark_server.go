@@ -28,14 +28,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/benchmark"
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/benchmark/grpc_testing"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/syscall"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
-	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/benchmark"
+	testpb "google.golang.org/grpc/benchmark/grpc_testing"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/internal/syscall"
+	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/testdata"
 )
 
 var (

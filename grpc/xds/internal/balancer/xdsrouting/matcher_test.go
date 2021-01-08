@@ -22,10 +22,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcrand"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcutil"
-	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/internal/grpcrand"
+	"google.golang.org/grpc/internal/grpcutil"
+	"google.golang.org/grpc/metadata"
 )
 
 func TestAndMatcherMatch(t *testing.T) {

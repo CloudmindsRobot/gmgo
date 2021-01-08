@@ -27,24 +27,24 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
 	"github.com/golang/protobuf/jsonpb"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc/attributes"
+	xdsinternal "google.golang.org/grpc/xds/internal"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	scpb "github.com/CloudmindsRobot/gmgo/grpc/internal/proto/grpc_service_config"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/internal/grpclog"
+	"google.golang.org/grpc/internal/grpctest"
+	scpb "google.golang.org/grpc/internal/proto/grpc_service_config"
+	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/serviceconfig"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/v2" // V2 client registration.
+	_ "google.golang.org/grpc/xds/internal/client/v2" // V2 client registration.
 )
 
 const defaultTestTimeout = 1 * time.Second

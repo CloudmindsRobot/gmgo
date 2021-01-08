@@ -25,12 +25,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver/manual"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/roundrobin"
+	"google.golang.org/grpc/internal"
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/resolver/manual"
+	"google.golang.org/grpc/serviceconfig"
 )
 
 var _ balancer.Builder = &magicalLB{}

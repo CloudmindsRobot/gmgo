@@ -24,9 +24,9 @@ import (
 	"context"
 	"net"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/serviceconfig"
 )
 
 var (

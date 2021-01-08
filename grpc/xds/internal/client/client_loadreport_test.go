@@ -23,23 +23,23 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeserver"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	endpointpb "github.com/envoyproxy/go-control-plane/envoy/api/v2/endpoint"
 	lrspb "github.com/envoyproxy/go-control-plane/envoy/service/load_stats/v2"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials/insecure"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/status"
+	"google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
+	"google.golang.org/grpc/xds/internal/version"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/v2" // Register the v2 xDS API client.
+	_ "google.golang.org/grpc/xds/internal/client/v2" // Register the v2 xDS API client.
 )
 
 const (

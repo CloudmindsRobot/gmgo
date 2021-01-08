@@ -21,8 +21,8 @@ package resolver
 import (
 	"testing"
 
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
 	"github.com/google/go-cmp/cmp"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 
 func TestNewActionsFromRoutes(t *testing.T) {

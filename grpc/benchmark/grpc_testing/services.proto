@@ -16,7 +16,7 @@
 // of unary/streaming requests/responses.
 syntax = "proto3";
 
-option go_package = "github.com/CloudmindsRobot/gmgo/grpc/benchmark/grpc_testing";
+option go_package = "google.golang.org/grpc/benchmark/grpc_testing";
 
 import "benchmark/grpc_testing/messages.proto";
 import "benchmark/grpc_testing/control.proto";

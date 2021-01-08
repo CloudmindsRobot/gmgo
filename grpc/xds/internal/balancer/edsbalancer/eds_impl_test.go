@@ -27,14 +27,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/balancergroup"
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/roundrobin"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc/xds/internal/balancer/balancergroup"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/client/load"
+	"google.golang.org/grpc/xds/internal/testutils"
 )
 
 var (

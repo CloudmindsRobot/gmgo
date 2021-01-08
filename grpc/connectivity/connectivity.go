@@ -22,7 +22,7 @@
 package connectivity
 
 import (
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"google.golang.org/grpc/grpclog"
 )
 
 var logger = grpclog.Component("core")

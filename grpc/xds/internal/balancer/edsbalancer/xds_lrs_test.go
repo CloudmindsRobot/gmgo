@@ -22,11 +22,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
-	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/resolver"
+	xdsinternal "google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 )
 
 // TestXDSLoadReporting verifies that the edsBalancer starts the loadReport

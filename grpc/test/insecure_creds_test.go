@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
-	"github.com/CloudmindsRobot/gmgo/grpc/peer"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/credentials/insecure"
+	"google.golang.org/grpc/peer"
+	"google.golang.org/grpc/status"
 
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
+	testpb "google.golang.org/grpc/test/grpc_testing"
 )
 
 const defaultTestTimeout = 5 * time.Second

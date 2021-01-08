@@ -7,10 +7,10 @@ import (
 	"errors"
 	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 
-	"github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/shim/internal"
+	"github.com/hyperledger/fabric-chaincode-go/shim/internal"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	"google.golang.org/grpc/keepalive"
 )
 
 // TLSProperties passed to ChaincodeServer

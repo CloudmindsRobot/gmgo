@@ -24,12 +24,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
 	"github.com/google/go-cmp/cmp"
+	"google.golang.org/grpc/attributes"
+	"google.golang.org/grpc/internal/testutils"
+	xdsinternal "google.golang.org/grpc/xds/internal"
+	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 )
 
 var (

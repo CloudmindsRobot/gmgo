@@ -23,7 +23,7 @@ package service
 import (
 	"sync"
 
-	grpc "github.com/CloudmindsRobot/gmgo/grpc"
+	grpc "google.golang.org/grpc"
 )
 
 var (

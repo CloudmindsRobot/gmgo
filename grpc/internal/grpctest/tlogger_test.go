@@ -21,8 +21,8 @@ package grpctest
 import (
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	grpclogi "github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	"google.golang.org/grpc/grpclog"
+	grpclogi "google.golang.org/grpc/internal/grpclog"
 )
 
 type s struct {

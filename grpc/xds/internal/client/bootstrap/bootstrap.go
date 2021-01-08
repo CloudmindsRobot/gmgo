@@ -26,17 +26,17 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/google"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/env"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/google"
+	"google.golang.org/grpc/credentials/insecure"
+	"google.golang.org/grpc/credentials/tls/certprovider"
+	"google.golang.org/grpc/internal"
+	"google.golang.org/grpc/xds/internal/env"
+	"google.golang.org/grpc/xds/internal/version"
 )
 
 const (

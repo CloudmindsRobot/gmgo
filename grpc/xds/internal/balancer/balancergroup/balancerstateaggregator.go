@@ -19,7 +19,7 @@
 package balancergroup
 
 import (
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	"google.golang.org/grpc/balancer"
 )
 
 // BalancerStateAggregator aggregates sub-picker and connectivity states into a

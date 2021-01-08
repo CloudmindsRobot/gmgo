@@ -23,7 +23,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	"google.golang.org/grpc/internal/grpctest"
 )
 
 const (

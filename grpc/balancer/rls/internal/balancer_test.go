@@ -24,13 +24,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
-	"github.com/CloudmindsRobot/gmgo/grpc/balancer/rls/internal/testutils/fakeserver"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/rls/internal/testutils/fakeserver"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/internal/grpctest"
+	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/testdata"
 )
 
 const defaultTestTimeout = 1 * time.Second

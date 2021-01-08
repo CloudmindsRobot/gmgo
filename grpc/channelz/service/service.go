@@ -23,17 +23,17 @@ import (
 	"context"
 	"net"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	channelzgrpc "github.com/CloudmindsRobot/gmgo/grpc/channelz/grpc_channelz_v1"
-	channelzpb "github.com/CloudmindsRobot/gmgo/grpc/channelz/grpc_channelz_v1"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
-	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/channelz"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
 	"github.com/golang/protobuf/ptypes"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
+	"google.golang.org/grpc"
+	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/connectivity"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/internal/channelz"
+	"google.golang.org/grpc/status"
 )
 
 func init() {

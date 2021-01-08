@@ -24,8 +24,6 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
-	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
@@ -34,6 +32,8 @@ import (
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"google.golang.org/grpc/xds/internal"
+	"google.golang.org/grpc/xds/internal/version"
 )
 
 func (s) TestEDSParseRespProto(t *testing.T) {

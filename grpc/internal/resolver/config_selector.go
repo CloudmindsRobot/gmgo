@@ -23,8 +23,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
-	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"google.golang.org/grpc/internal/serviceconfig"
+	"google.golang.org/grpc/resolver"
 )
 
 // ConfigSelector controls what configuration to use for every RPC.

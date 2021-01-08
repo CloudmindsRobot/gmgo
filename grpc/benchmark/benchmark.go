@@ -28,11 +28,11 @@ import (
 	"log"
 	"net"
 
-	"github.com/CloudmindsRobot/gmgo/grpc"
-	testpb "github.com/CloudmindsRobot/gmgo/grpc/benchmark/grpc_testing"
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
+	"google.golang.org/grpc"
+	testpb "google.golang.org/grpc/benchmark/grpc_testing"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/grpclog"
+	"google.golang.org/grpc/status"
 )
 
 var logger = grpclog.Component("benchmark")

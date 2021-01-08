@@ -24,7 +24,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
+	"google.golang.org/grpc/internal/testutils"
 )
 
 type rdsUpdateErr struct {

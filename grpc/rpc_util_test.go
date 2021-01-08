@@ -26,14 +26,14 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/CloudmindsRobot/gmgo/grpc/codes"
-	"github.com/CloudmindsRobot/gmgo/grpc/encoding"
-	protoenc "github.com/CloudmindsRobot/gmgo/grpc/encoding/proto"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
-	"github.com/CloudmindsRobot/gmgo/grpc/internal/transport"
-	"github.com/CloudmindsRobot/gmgo/grpc/status"
-	perfpb "github.com/CloudmindsRobot/gmgo/grpc/test/codec_perf"
 	"github.com/golang/protobuf/proto"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/encoding"
+	protoenc "google.golang.org/grpc/encoding/proto"
+	"google.golang.org/grpc/internal/testutils"
+	"google.golang.org/grpc/internal/transport"
+	"google.golang.org/grpc/status"
+	perfpb "google.golang.org/grpc/test/codec_perf"
 )
 
 type fullReader struct {
