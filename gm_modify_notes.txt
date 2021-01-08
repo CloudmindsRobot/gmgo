@@ -1,3 +1,6 @@
+
+github.com/studyzy -> github.com/CloudmindsRobot/gmgo
+
 #1 NOT replace:
 "crypto/rand"
 
@@ -21,11 +24,6 @@
 "golang.org/x/net/http/httpguts"
 
 "golang.org/x/net/http2/hpack"
-
-"crypto/ed25519"
-
-"crypto/ed25519/internal/edwards25519"
-
 
 
 #2 has been replace:
@@ -71,8 +69,27 @@ pkgs replace
 "github.com/CloudmindsRobot/gmgo/net/http/pprof"
 
 
-#3
+#3 internal
+"crypto/internal/randutil"
+"github.com/CloudmindsRobot/gmgo/crypto/internal/randutil"
 
+"crypto/internal/subtle"
+"github.com/CloudmindsRobot/gmgo/crypto/internal/subtle"
+
+"internal/cpu"
+"github.com/CloudmindsRobot/gmgo/internal/cpu"
+
+"net/http/internal"
+"github.com/CloudmindsRobot/gmgo/net/http/internal"
+
+"internal/nettrace"
+"github.com/CloudmindsRobot/gmgo/internal/nettrace"
+
+"internal/profile"
+"github.com/CloudmindsRobot/gmgo/internal/profile"
+
+
+# 4
 
 
 
