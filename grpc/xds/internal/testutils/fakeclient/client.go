@@ -22,10 +22,10 @@ package fakeclient
 import (
 	"context"
 
-	"google.golang.org/grpc/internal/testutils"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/client/load"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
 )
 
 // Client is a fake implementation of an xds client. It exposes a bunch of

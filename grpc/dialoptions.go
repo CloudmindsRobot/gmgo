@@ -24,16 +24,16 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
+	"github.com/CloudmindsRobot/gmgo/grpc/backoff"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal"
+	internalbackoff "github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/envconfig"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/transport"
+	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc/stats"
 )
 
 // dialOptions configure a Dial call. dialOptions are set by the DialOption

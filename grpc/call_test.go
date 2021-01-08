@@ -30,9 +30,9 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/status"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/transport"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 )
 
 var (

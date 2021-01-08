@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/xds/internal/client/load"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/buffer"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
 )
 
 // ErrResourceTypeUnsupported is an error used to indicate an unsupported xDS

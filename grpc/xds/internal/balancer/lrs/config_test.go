@@ -21,10 +21,10 @@ package lrs
 import (
 	"testing"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
+	internalserviceconfig "github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
+	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer/roundrobin"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	xdsinternal "google.golang.org/grpc/xds/internal"
 )
 
 const (

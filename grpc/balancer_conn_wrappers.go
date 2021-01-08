@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/buffer"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/channelz"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcsync"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
 )
 
 // scStateUpdate contains the subConn and the new state it changed to.

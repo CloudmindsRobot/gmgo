@@ -29,9 +29,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/syscall"
+	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc/internal/syscall"
-	"google.golang.org/grpc/keepalive"
 )
 
 const defaultTestTimeout = 10 * time.Second

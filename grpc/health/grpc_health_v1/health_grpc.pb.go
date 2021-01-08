@@ -4,9 +4,9 @@ package grpc_health_v1
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/CloudmindsRobot/gmgo/grpc"
+	codes "github.com/CloudmindsRobot/gmgo/grpc/codes"
+	status "github.com/CloudmindsRobot/gmgo/grpc/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -15,7 +15,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 // HealthClient is the client API for Health service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/CloudmindsRobot/gmgo/grpc/?tab=doc#ClientConn.NewStream.
 type HealthClient interface {
 	// If the requested service is unknown, the call will fail with status
 	// NOT_FOUND.

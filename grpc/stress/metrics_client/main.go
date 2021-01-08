@@ -25,9 +25,9 @@ import (
 	"fmt"
 	"io"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	metricspb "google.golang.org/grpc/stress/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	metricspb "github.com/CloudmindsRobot/gmgo/grpc/stress/grpc_testing"
 )
 
 var (

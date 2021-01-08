@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 
+	"github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/pkg/attrmgr"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-chaincode-go/pkg/attrmgr"
 	"github.com/hyperledger/fabric-protos-go/msp"
 )
 

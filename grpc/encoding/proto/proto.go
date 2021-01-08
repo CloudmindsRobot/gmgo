@@ -21,8 +21,8 @@
 package proto
 
 import (
+	"github.com/CloudmindsRobot/gmgo/grpc/encoding"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/encoding"
 )
 
 // Name is the name registered for the proto compressor.

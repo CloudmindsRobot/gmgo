@@ -24,15 +24,15 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer/rls/internal/keys"
+	rlspb "github.com/CloudmindsRobot/gmgo/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcutil"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/ptypes"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/rls/internal/keys"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
 )
 
 const (

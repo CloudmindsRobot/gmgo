@@ -17,7 +17,7 @@
 
 package edsbalancer
 
-import "google.golang.org/grpc/balancer"
+import "github.com/CloudmindsRobot/gmgo/grpc/balancer"
 
 // The old xds balancer implements logic for both CDS and EDS. With the new
 // design, CDS is split and moved to a separate balancer, and the xds balancer

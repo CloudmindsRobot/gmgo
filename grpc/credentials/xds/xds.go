@@ -34,12 +34,12 @@ import (
 	"net"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
-	credinternal "google.golang.org/grpc/internal/credentials"
-	"google.golang.org/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal"
+	credinternal "github.com/CloudmindsRobot/gmgo/grpc/internal/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
 )
 
 func init() {

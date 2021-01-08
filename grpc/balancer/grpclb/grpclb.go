@@ -19,7 +19,7 @@
 // Package grpclb defines a grpclb balancer.
 //
 // To install grpclb balancer, import this package as:
-//    import _ "google.golang.org/grpc/balancer/grpclb"
+//    import _ "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb"
 package grpclb
 
 import (
@@ -28,19 +28,19 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/resolver/dns"
-	"google.golang.org/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	grpclbstate "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb/state"
+	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/resolver/dns"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
 
+	lbpb "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb/grpc_lb_v1"
 	durationpb "github.com/golang/protobuf/ptypes/duration"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
 )
 
 const (

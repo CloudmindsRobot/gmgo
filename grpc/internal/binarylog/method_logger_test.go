@@ -25,11 +25,11 @@ import (
 	"testing"
 	"time"
 
+	pb "github.com/CloudmindsRobot/gmgo/grpc/binarylog/grpc_binarylog_v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/ptypes/duration"
-	pb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
 )
 
 func (s) TestLog(t *testing.T) {

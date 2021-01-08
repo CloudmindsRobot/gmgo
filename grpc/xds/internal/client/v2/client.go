@@ -23,12 +23,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpclog"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/version"
 
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"

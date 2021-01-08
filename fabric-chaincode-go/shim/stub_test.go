@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/shim/internal/mock"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-chaincode-go/shim/internal/mock"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/hyperledger/fabric-protos-go/ledger/queryresult"
 	peerpb "github.com/hyperledger/fabric-protos-go/peer"

@@ -18,11 +18,11 @@
 package orca
 
 import (
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/balancerload"
+	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
 	orcapb "github.com/cncf/udpa/go/udpa/data/orca/v1"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/balancerload"
-	"google.golang.org/grpc/metadata"
 )
 
 const mdKey = "X-Endpoint-Load-Metrics-Bin"

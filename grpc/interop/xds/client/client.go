@@ -30,12 +30,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	_ "google.golang.org/grpc/xds"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/interop/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
+	"github.com/CloudmindsRobot/gmgo/grpc/peer"
+	_ "github.com/CloudmindsRobot/gmgo/grpc/xds"
 )
 
 type statsWatcherKey struct {

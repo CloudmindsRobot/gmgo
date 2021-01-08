@@ -24,18 +24,18 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/internal"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcrand"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
+	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
+	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/balancer/cdsbalancer" // To parse LB config
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer" // To parse LB config
-	"google.golang.org/grpc/xds/internal/client"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 )
 
 const (

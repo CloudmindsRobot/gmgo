@@ -30,7 +30,7 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 
-	"google.golang.org/grpc/internal"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal"
 )
 
 func init() {

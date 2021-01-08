@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer"
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
+	"github.com/CloudmindsRobot/gmgo/grpc/connectivity"
+	internalserviceconfig "github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
+	"github.com/CloudmindsRobot/gmgo/grpc/resolver"
+	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/connectivity"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/resolver"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
 )
 
 const defaultTestTimeout = 1 * time.Second

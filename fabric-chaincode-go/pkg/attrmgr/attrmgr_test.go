@@ -8,7 +8,7 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"testing"
 
-	"github.com/hyperledger/fabric-chaincode-go/pkg/attrmgr"
+	"github.com/CloudmindsRobot/gmgo/fabric-chaincode-go/pkg/attrmgr"
 	"github.com/stretchr/testify/assert"
 )
 

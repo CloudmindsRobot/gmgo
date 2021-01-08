@@ -22,7 +22,7 @@ import (
 	"context"
 	"testing"
 
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
 )
 
 type ldsUpdateErr struct {

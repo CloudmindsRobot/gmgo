@@ -31,12 +31,12 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
-	"google.golang.org/grpc/status"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/interop"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/interop/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 )
 
 var (

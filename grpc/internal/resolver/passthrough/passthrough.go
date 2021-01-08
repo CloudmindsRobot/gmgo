@@ -20,7 +20,7 @@
 // name without scheme back to gRPC as resolved address.
 package passthrough
 
-import "google.golang.org/grpc/resolver"
+import "github.com/CloudmindsRobot/gmgo/grpc/resolver"
 
 const scheme = "passthrough"
 

@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	"fmt"
 
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
 )
 
 const (

@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/grpc/internal/grpclog"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
 )
 
 // serviceUpdate contains information received from the RDS responses which is

@@ -8,10 +8,10 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/tls"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
 	peerpb "github.com/hyperledger/fabric-protos-go/peer"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/keepalive"
 )
 
 const (

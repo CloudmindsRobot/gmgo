@@ -31,19 +31,19 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/env"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeserver"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v2discoverypb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	testpb "google.golang.org/grpc/test/grpc_testing"
-	"google.golang.org/grpc/xds"
-	"google.golang.org/grpc/xds/internal/env"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeserver"
-	"google.golang.org/grpc/xds/internal/version"
 )
 
 const (

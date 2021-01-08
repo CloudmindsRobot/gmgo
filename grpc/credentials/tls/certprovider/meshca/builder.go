@@ -26,11 +26,11 @@ import (
 	"github.com/CloudmindsRobot/gmgo/crypto/x509"
 	"sync"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/sts"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal/backoff"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/sts"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
 )
 
 const pluginName = "mesh_ca"

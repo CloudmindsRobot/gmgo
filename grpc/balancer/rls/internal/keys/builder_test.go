@@ -23,9 +23,9 @@ import (
 	"strings"
 	"testing"
 
+	rlspb "github.com/CloudmindsRobot/gmgo/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
 	"github.com/google/go-cmp/cmp"
-	rlspb "google.golang.org/grpc/balancer/rls/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/metadata"
 )
 
 var (

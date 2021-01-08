@@ -34,8 +34,8 @@ import (
 	"io/ioutil"
 	"time"
 
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
 )
 
 const (

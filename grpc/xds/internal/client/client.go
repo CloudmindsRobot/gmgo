@@ -31,17 +31,17 @@ import (
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/golang/protobuf/proto"
 
-	"google.golang.org/grpc/xds/internal/client/load"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	"google.golang.org/grpc/xds/internal/version"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/backoff"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/buffer"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpcsync"
+	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 )
 
 var (

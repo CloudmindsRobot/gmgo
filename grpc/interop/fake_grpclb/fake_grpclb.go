@@ -28,14 +28,14 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/grpc"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	lbpb "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb/grpc_lb_v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/alts"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
+	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
 )
 
 var (

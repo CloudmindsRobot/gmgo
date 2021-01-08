@@ -22,14 +22,14 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	_ "google.golang.org/grpc/xds/internal/client/v2" // Register the v2 API client.
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/version"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
+	_ "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/v2" // Register the v2 API client.
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 )
 
 type s struct {

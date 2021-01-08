@@ -31,13 +31,13 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	_ "github.com/CloudmindsRobot/gmgo/grpc/balancer/grpclb"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/alts"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/google"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/interop/grpc_testing"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/credentials/google"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
 )
 
 var (

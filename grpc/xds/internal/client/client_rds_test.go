@@ -21,6 +21,7 @@ package client
 import (
 	"testing"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	v2routepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/route"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
@@ -33,7 +34,6 @@ import (
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/xds/internal/version"
 )
 
 func (s) TestGetRouteConfigFromListener(t *testing.T) {

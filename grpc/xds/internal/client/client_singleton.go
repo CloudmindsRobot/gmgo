@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
 )
 
 const defaultWatchExpiryTimeout = 15 * time.Second

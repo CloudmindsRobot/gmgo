@@ -22,13 +22,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/version"
 	v2xdspb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	"github.com/golang/protobuf/ptypes"
 	anypb "github.com/golang/protobuf/ptypes/any"
-	"google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/version"
 )
 
 var (

@@ -22,8 +22,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	internalserviceconfig "github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
+	"github.com/CloudmindsRobot/gmgo/grpc/serviceconfig"
 )
 
 type child struct {

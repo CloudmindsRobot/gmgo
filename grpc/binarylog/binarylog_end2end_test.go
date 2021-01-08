@@ -28,16 +28,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/binarylog"
+	pb "github.com/CloudmindsRobot/gmgo/grpc/binarylog/grpc_binarylog_v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	iblog "github.com/CloudmindsRobot/gmgo/grpc/internal/binarylog"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	"github.com/CloudmindsRobot/gmgo/grpc/metadata"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/stats/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/binarylog"
-	pb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/grpclog"
-	iblog "google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/metadata"
-	testpb "google.golang.org/grpc/stats/grpc_testing"
-	"google.golang.org/grpc/status"
 )
 
 var grpclogLogger = grpclog.Component("binarylog")

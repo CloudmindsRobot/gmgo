@@ -21,9 +21,9 @@ package priority
 import (
 	"testing"
 
+	"github.com/CloudmindsRobot/gmgo/grpc/balancer/roundrobin"
+	internalserviceconfig "github.com/CloudmindsRobot/gmgo/grpc/internal/serviceconfig"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer/roundrobin"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
 )
 
 func TestParseConfig(t *testing.T) {

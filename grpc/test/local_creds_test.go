@@ -26,14 +26,14 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/local"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/local"
+	"github.com/CloudmindsRobot/gmgo/grpc/peer"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/test/grpc_testing"
 )
 
 func testLocalCredsE2ESucceed(network, address string) error {

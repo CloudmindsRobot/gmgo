@@ -27,14 +27,14 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/bootstrap"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/insecure"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/bootstrap"
+	xdstestutils "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/testutils/fakeclient"
 )
 
 const (

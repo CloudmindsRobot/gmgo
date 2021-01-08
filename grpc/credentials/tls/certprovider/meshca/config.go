@@ -36,8 +36,8 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/ptypes"
 
-	"google.golang.org/grpc/credentials/sts"
-	configpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/sts"
+	configpb "github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
 )
 
 const (

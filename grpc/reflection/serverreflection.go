@@ -23,7 +23,7 @@ The service implemented is defined in:
 https://github.com/grpc/grpc/blob/master/src/proto/grpc/reflection/v1alpha/reflection.proto.
 
 To register server reflection on a gRPC server:
-	import "google.golang.org/grpc/reflection"
+	import "github.com/CloudmindsRobot/gmgo/grpc/reflection"
 
 	s := grpc.NewServer()
 	pb.RegisterYourOwnServer(s, &server{})
@@ -34,7 +34,7 @@ To register server reflection on a gRPC server:
 	s.Serve(lis)
 
 */
-package reflection // import "google.golang.org/grpc/reflection"
+package reflection // import "github.com/CloudmindsRobot/gmgo/grpc/reflection"
 
 import (
 	"bytes"
@@ -46,12 +46,12 @@ import (
 	"sort"
 	"sync"
 
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/codes"
+	rpb "github.com/CloudmindsRobot/gmgo/grpc/reflection/grpc_reflection_v1alpha"
+	"github.com/CloudmindsRobot/gmgo/grpc/status"
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
-	"google.golang.org/grpc/status"
 )
 
 type serverReflectionServer struct {

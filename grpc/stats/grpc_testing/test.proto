@@ -14,7 +14,7 @@
 
 syntax = "proto3";
 
-option go_package = "google.golang.org/grpc/stats/grpc_testing";
+option go_package = "github.com/CloudmindsRobot/gmgo/grpc/stats/grpc_testing";
 
 package grpc.testing;
 

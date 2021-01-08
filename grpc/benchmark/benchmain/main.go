@@ -57,16 +57,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc"
-	bm "google.golang.org/grpc/benchmark"
-	"google.golang.org/grpc/benchmark/flags"
-	testpb "google.golang.org/grpc/benchmark/grpc_testing"
-	"google.golang.org/grpc/benchmark/latency"
-	"google.golang.org/grpc/benchmark/stats"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/test/bufconn"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	bm "github.com/CloudmindsRobot/gmgo/grpc/benchmark"
+	"github.com/CloudmindsRobot/gmgo/grpc/benchmark/flags"
+	testpb "github.com/CloudmindsRobot/gmgo/grpc/benchmark/grpc_testing"
+	"github.com/CloudmindsRobot/gmgo/grpc/benchmark/latency"
+	"github.com/CloudmindsRobot/gmgo/grpc/benchmark/stats"
+	"github.com/CloudmindsRobot/gmgo/grpc/grpclog"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/channelz"
+	"github.com/CloudmindsRobot/gmgo/grpc/keepalive"
+	"github.com/CloudmindsRobot/gmgo/grpc/test/bufconn"
 )
 
 var (

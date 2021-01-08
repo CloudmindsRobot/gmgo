@@ -19,7 +19,7 @@ matrix:
   - go: 1.11.x  # Keep until interop tests no longer require Go1.11
     env: GO111MODULE=on
 
-go_import_path: google.golang.org/grpc
+go_import_path: github.com/CloudmindsRobot/gmgo/grpc
 
 before_install:
   - if [[ "${GO111MODULE}" = "on" ]]; then mkdir "${HOME}/go"; export GOPATH="${HOME}/go"; fi

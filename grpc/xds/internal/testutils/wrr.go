@@ -21,7 +21,7 @@ package testutils
 import (
 	"sync"
 
-	"google.golang.org/grpc/internal/wrr"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/wrr"
 )
 
 // testWRR is a deterministic WRR implementation.

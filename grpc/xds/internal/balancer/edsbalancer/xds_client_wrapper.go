@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/internal/grpclog"
-	xdsinternal "google.golang.org/grpc/xds/internal"
-	xdsclient "google.golang.org/grpc/xds/internal/client"
-	"google.golang.org/grpc/xds/internal/client/load"
+	"github.com/CloudmindsRobot/gmgo/grpc/attributes"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpclog"
+	xdsinternal "github.com/CloudmindsRobot/gmgo/grpc/xds/internal"
+	xdsclient "github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client"
+	"github.com/CloudmindsRobot/gmgo/grpc/xds/internal/client/load"
 )
 
 // xdsClientInterface contains only the xds_client methods needed by EDS

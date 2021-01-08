@@ -37,12 +37,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	configpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
-	meshgrpc "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	meshpb "google.golang.org/grpc/credentials/tls/certprovider/meshca/internal/v1"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
+	configpb "github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider/meshca/internal/meshca_experimental"
+	meshgrpc "github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider/meshca/internal/v1"
+	meshpb "github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider/meshca/internal/v1"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
 )
 
 const (

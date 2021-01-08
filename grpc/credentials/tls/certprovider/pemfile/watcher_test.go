@@ -30,10 +30,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/testdata"
+	"github.com/CloudmindsRobot/gmgo/grpc/credentials/tls/certprovider"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/grpctest"
+	"github.com/CloudmindsRobot/gmgo/grpc/internal/testutils"
+	"github.com/CloudmindsRobot/gmgo/grpc/testdata"
 )
 
 const (
