@@ -8,12 +8,6 @@ github.com/studyzy -> github.com/CloudmindsRobot/gmgo
 
 "crypto/hmac"
 
-"crypto/sha1"
-
-"crypto/sha512"
-
-"crypto/md5"
-
 "crypto/des"
 
 "crypto/x509/pkix"
@@ -90,6 +84,18 @@ pkgs replace
 
 
 # 4
+"crypto/sha512"
+"github.com/CloudmindsRobot/gmgo/crypto/sha512"
+
+"crypto/sha1"
+"github.com/CloudmindsRobot/gmgo/crypto/sha1"
+
+"crypto/md5"
+"github.com/CloudmindsRobot/gmgo/crypto/md5"
+
+
+
+# 5
 
 
 
