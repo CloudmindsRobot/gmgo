@@ -7,8 +7,8 @@ package rsa
 import (
 	"bytes"
 	"crypto/rand"
-	"crypto/sha1"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
 	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"math/big"
 	"testing"

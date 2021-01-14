@@ -7,10 +7,10 @@ package rsa
 import (
 	"bytes"
 	"crypto/rand"
-	"crypto/sha1"
 	"encoding/base64"
 	"encoding/hex"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
 	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
 	"io"
 	"math/big"

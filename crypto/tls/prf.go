@@ -6,13 +6,13 @@ package tls
 
 import (
 	"crypto/hmac"
-	"crypto/md5"
-	"crypto/sha1"
-	"crypto/sha512"
 	"errors"
 	"fmt"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/md5"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
 	"github.com/CloudmindsRobot/gmgo/crypto/sha256"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha512"
 	"hash"
 )
 

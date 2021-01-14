@@ -5,8 +5,8 @@
 package md5_test
 
 import (
-	"crypto/md5"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/md5"
 	"io"
 	"log"
 	"os"

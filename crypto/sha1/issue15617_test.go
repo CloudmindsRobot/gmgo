@@ -8,7 +8,7 @@
 package sha1_test
 
 import (
-	"crypto/sha1"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
 	"syscall"
 	"testing"
 )

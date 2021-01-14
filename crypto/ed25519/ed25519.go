@@ -19,9 +19,9 @@ import (
 	"bytes"
 	"crypto/ed25519/internal/edwards25519"
 	cryptorand "crypto/rand"
-	"crypto/sha512"
 	"errors"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha512"
 	"io"
 	"strconv"
 )

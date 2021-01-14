@@ -13,7 +13,9 @@ package sha512
 import (
 	"encoding/binary"
 	"errors"
+	"fmt"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 	"hash"
 )
 
@@ -211,28 +213,36 @@ func consumeUint64(b []byte) ([]byte, uint64) {
 
 // New returns a new hash.Hash computing the SHA-512 checksum.
 func New() hash.Hash {
-	d := &digest{function: crypto.SHA512}
+	//d := &digest{function: crypto.SHA512}
+	d := new(sm3.SM3)
+	//d.Function = crypto.SHA512
 	d.Reset()
 	return d
 }
 
 // New512_224 returns a new hash.Hash computing the SHA-512/224 checksum.
 func New512_224() hash.Hash {
-	d := &digest{function: crypto.SHA512_224}
+	//d := &digest{function: crypto.SHA512_224}
+	d := new(sm3.SM3)
+	//d.Function = crypto.SHA512_224
 	d.Reset()
 	return d
 }
 
 // New512_256 returns a new hash.Hash computing the SHA-512/256 checksum.
 func New512_256() hash.Hash {
-	d := &digest{function: crypto.SHA512_256}
+	//d := &digest{function: crypto.SHA512_256}
+	d := new(sm3.SM3)
+	//d.Function = crypto.SHA512_256
 	d.Reset()
 	return d
 }
 
 // New384 returns a new hash.Hash computing the SHA-384 checksum.
 func New384() hash.Hash {
-	d := &digest{function: crypto.SHA384}
+	//d := &digest{function: crypto.SHA384}
+	d := new(sm3.SM3)
+	//d.Function = crypto.SHA384
 	d.Reset()
 	return d
 }
@@ -329,39 +339,62 @@ func (d *digest) checkSum() [Size]byte {
 }
 
 // Sum512 returns the SHA512 checksum of the data.
-func Sum512(data []byte) [Size]byte {
+func Sum512(data []byte) (sum512 [Size]byte) {
+	fmt.Printf("phf - sha512 - Sum512 - len(data) = %v\n", len(data))
+	/*
 	d := digest{function: crypto.SHA512}
 	d.Reset()
 	d.Write(data)
 	return d.checkSum()
+	*/
+	sum := sm3.Sm3Sum(data)
+	copy(sum512[:], sum[:Size256])
+	copy(sum512[Size256:], sum[:Size256])
+	return
 }
 
 // Sum384 returns the SHA384 checksum of the data.
 func Sum384(data []byte) (sum384 [Size384]byte) {
+	fmt.Printf("phf - sha512 - Sum384 - len(data) = %v\n", len(data))
+	/*
 	d := digest{function: crypto.SHA384}
 	d.Reset()
 	d.Write(data)
 	sum := d.checkSum()
 	copy(sum384[:], sum[:Size384])
+	*/
+	sum := sm3.Sm3Sum(data)
+	copy(sum384[:], sum[:Size256])
+	copy(sum384[Size256:], sum[:(Size384-Size256)])
 	return
 }
 
 // Sum512_224 returns the Sum512/224 checksum of the data.
 func Sum512_224(data []byte) (sum224 [Size224]byte) {
+	fmt.Printf("phf - sha512 - Sum512_224 - len(data) = %v\n", len(data))
+	/*
 	d := digest{function: crypto.SHA512_224}
 	d.Reset()
 	d.Write(data)
 	sum := d.checkSum()
+	copy(sum224[:], sum[:Size224])
+	*/
+	sum := sm3.Sm3Sum(data)
 	copy(sum224[:], sum[:Size224])
 	return
 }
 
 // Sum512_256 returns the Sum512/256 checksum of the data.
 func Sum512_256(data []byte) (sum256 [Size256]byte) {
+	fmt.Printf("phf - sha512 - Sum512_256 - len(data) = %v\n", len(data))
+	/*
 	d := digest{function: crypto.SHA512_256}
 	d.Reset()
 	d.Write(data)
 	sum := d.checkSum()
+	copy(sum256[:], sum[:Size256])
+	*/
+	sum := sm3.Sm3Sum(data)
 	copy(sum256[:], sum[:Size256])
 	return
 }

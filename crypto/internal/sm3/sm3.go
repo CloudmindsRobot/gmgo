@@ -232,6 +232,8 @@ func (sm3 *SM3) Write(p []byte) (int, error) {
 // Sum appends the current hash to b and returns the resulting slice.
 // It does not change the underlying hash state.
 func (sm3 *SM3) Sum(in []byte) []byte {
+	fmt.Printf("phf - sm3 - Sum - len(in) = %v\n", len(in))
+
 	sm3.Write(in)
 	msg := sm3.pad()
 	//Finialize

@@ -11,7 +11,9 @@ package sha1
 import (
 	"encoding/binary"
 	"errors"
+	"fmt"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 	"hash"
 )
 
@@ -119,7 +121,8 @@ func (d *digest) Reset() {
 // implements encoding.BinaryMarshaler and encoding.BinaryUnmarshaler to
 // marshal and unmarshal the internal state of the hash.
 func New() hash.Hash {
-	d := new(digest)
+	//d := new(digest)
+	d := new(sm3.SM3)
 	d.Reset()
 	return d
 }
@@ -258,9 +261,15 @@ func (d *digest) constSum() [Size]byte {
 }
 
 // Sum returns the SHA-1 checksum of the data.
-func Sum(data []byte) [Size]byte {
+func Sum(data []byte) (sumsha1 [Size]byte) {
+	fmt.Printf("phf - sha1 - Sum - len(data) = %v\n", len(data))
+	/*
 	var d digest
 	d.Reset()
 	d.Write(data)
 	return d.checkSum()
+	*/
+	sum := sm3.Sm3Sum(data)
+	copy(sumsha1[:], sum[:Size])
+	return
 }

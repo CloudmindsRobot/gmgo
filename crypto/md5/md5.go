@@ -13,7 +13,9 @@ package md5
 import (
 	"encoding/binary"
 	"errors"
+	"fmt"
 	"github.com/CloudmindsRobot/gmgo/crypto"
+	"github.com/CloudmindsRobot/gmgo/crypto/internal/sm3"
 	"hash"
 )
 
@@ -111,7 +113,8 @@ func consumeUint32(b []byte) ([]byte, uint32) {
 // implements encoding.BinaryMarshaler and encoding.BinaryUnmarshaler to
 // marshal and unmarshal the internal state of the hash.
 func New() hash.Hash {
-	d := new(digest)
+	//d := new(digest)
+	d := new(sm3.SM3)
 	d.Reset()
 	return d
 }
@@ -187,9 +190,15 @@ func (d *digest) checkSum() [Size]byte {
 }
 
 // Sum returns the MD5 checksum of the data.
-func Sum(data []byte) [Size]byte {
+func Sum(data []byte) (summd5 [Size]byte) {
+	fmt.Printf("phf - md5 - Sum - len(data) = %v\n", len(data))
+	/*
 	var d digest
 	d.Reset()
 	d.Write(data)
 	return d.checkSum()
+	*/
+	sum := sm3.Sm3Sum(data)
+	copy(summd5[:], sum[:Size])
+	return
 }

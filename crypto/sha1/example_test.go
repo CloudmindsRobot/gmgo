@@ -5,8 +5,8 @@
 package sha1_test
 
 import (
-	"crypto/sha1"
 	"fmt"
+	"github.com/CloudmindsRobot/gmgo/crypto/sha1"
 	"io"
 	"log"
 	"os"

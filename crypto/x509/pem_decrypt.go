@@ -11,11 +11,11 @@ package x509
 import (
 	"crypto/cipher"
 	"crypto/des"
-	"crypto/md5"
 	"encoding/hex"
 	"encoding/pem"
 	"errors"
 	"github.com/CloudmindsRobot/gmgo/crypto/aes"
+	"github.com/CloudmindsRobot/gmgo/crypto/md5"
 	"io"
 	"strings"
 )
