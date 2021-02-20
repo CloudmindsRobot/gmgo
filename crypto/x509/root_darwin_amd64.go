@@ -8,8 +8,8 @@ package x509
 
 import (
 	"bytes"
-	macOS "crypto/x509/internal/macos"
 	"fmt"
+	macOS "github.com/CloudmindsRobot/gmgo/crypto/x509/internal/macos"
 	"os"
 	"strings"
 )
