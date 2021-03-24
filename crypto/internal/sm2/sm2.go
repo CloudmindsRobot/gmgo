@@ -176,6 +176,16 @@ var errZeroParam = errors.New("zero parameter")
 func Sign(priv *PrivateKey, hash []byte) (r, s *big.Int, err error) {
 	fmt.Printf("phf - sm2 - Sign - len(hash) = %v\n", len(hash))
 
+	za, err := ZA(&priv.PublicKey, default_uid)
+	if err != nil {
+		return nil, nil, err
+	}
+	eHash, err := msgHash(za, hash)
+	if err != nil {
+		return nil, nil, err
+	}
+	hash = eHash.Bytes()
+
 	entropylen := (priv.Curve.Params().BitSize + 7) / 16
 	if entropylen > 32 {
 		entropylen = 32
@@ -246,6 +256,16 @@ func Sign(priv *PrivateKey, hash []byte) (r, s *big.Int, err error) {
 
 func Verify(pub *PublicKey, hash []byte, r, s *big.Int) bool {
 	//fmt.Printf("phf - sm2 - Verify - len(hash) = %v\n", len(hash))
+
+	za, err := ZA(pub, default_uid)
+	if err != nil {
+		return false
+	}
+	eHash, err := msgHash(za, hash)
+	if err != nil {
+		return false
+	}
+	hash = eHash.Bytes()
 
 	c := pub.Curve
 	N := c.Params().N
