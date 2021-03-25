@@ -176,6 +176,8 @@ var errZeroParam = errors.New("zero parameter")
 func Sign(priv *PrivateKey, hash []byte) (r, s *big.Int, err error) {
 	fmt.Printf("phf - sm2 - Sign - len(hash) = %v\n", len(hash))
 
+	P256Sm2()
+
 	za, err := ZA(&priv.PublicKey, default_uid)
 	if err != nil {
 		return nil, nil, err
@@ -256,6 +258,8 @@ func Sign(priv *PrivateKey, hash []byte) (r, s *big.Int, err error) {
 
 func Verify(pub *PublicKey, hash []byte, r, s *big.Int) bool {
 	//fmt.Printf("phf - sm2 - Verify - len(hash) = %v\n", len(hash))
+
+	P256Sm2()
 
 	za, err := ZA(pub, default_uid)
 	if err != nil {
