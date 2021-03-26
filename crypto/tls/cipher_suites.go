@@ -222,8 +222,11 @@ type cipherSuiteTLS13 struct {
 
 var cipherSuitesTLS13 = []*cipherSuiteTLS13{
 	{TLS_AES_128_GCM_SHA256, 16, aeadAESGCMTLS13, crypto.SHA256},
-	{TLS_CHACHA20_POLY1305_SHA256, 32, aeadChaCha20Poly1305, crypto.SHA256},
-	{TLS_AES_256_GCM_SHA384, 32, aeadAESGCMTLS13, crypto.SHA384},
+	// for gm sm4 (len(key) != BlockSize)
+	//{TLS_CHACHA20_POLY1305_SHA256, 32, aeadChaCha20Poly1305, crypto.SHA256},
+	{TLS_CHACHA20_POLY1305_SHA256, 16, aeadChaCha20Poly1305, crypto.SHA256},
+	//{TLS_AES_256_GCM_SHA384, 32, aeadAESGCMTLS13, crypto.SHA384},
+	{TLS_AES_256_GCM_SHA384, 16, aeadAESGCMTLS13, crypto.SHA256},
 }
 
 func cipherRC4(key, iv []byte, isRead bool) interface{} {
